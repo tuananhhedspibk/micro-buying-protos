@@ -20,9 +20,9 @@ message CreateItemResponse {
 
 message UpdateItemRequest {
   string id = 1;
-  string code = 2;
-  string name = 3;
-  string image = 4;
+  optional string code = 2;
+  optional string name = 3;
+  optional string image = 4;
 }
 
 message UpdateItemResponse {
