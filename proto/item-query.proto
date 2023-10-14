@@ -19,6 +19,6 @@ message GetItemResponse {
 message ItemData {
   string id = 1;
   string code = 2;
-  string message = 3;
+  string name = 3;
   string image = 4;
 }
