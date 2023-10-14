@@ -19,6 +19,7 @@ message CreateItemResponse {
 }
 
 message UpdateItemRequest {
+  string id = 1;
   string code = 1;
   string name = 2;
   string image = 3;
