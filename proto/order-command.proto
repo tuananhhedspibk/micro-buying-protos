@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package order_command;
+
+service OrderCommandService {
+  rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse) {}
+}
+
+message ItemData {
+  string code = 1;
+  string name = 2;
+  string image = 3;
+}
+
+message CreateOrderRequest {
+  repeated ItemData items = 1;
+}
+
+message CreateOrderResponse {
+  int32 status = 1;
+  repeated string error = 2;
+}
