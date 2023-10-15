@@ -23,6 +23,7 @@ message UpdateItemRequest {
   optional string code = 2;
   optional string name = 3;
   optional string image = 4;
+  optional string status = 5;
 }
 
 message UpdateItemResponse {
