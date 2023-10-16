@@ -5,20 +5,6 @@ package item_command;
 service ItemCommandService {
   rpc CreateItem(CreateItemRequest) returns (CreateItemResponse) {}
   rpc UpdateItem(UpdateItemRequest) returns (UpdateItemResponse) {}
-  rpc BuyItems(BuyItemsRequest) returns (BuyItemsResponse) {}
-}
-
-message BuyItemData {
-  string code = 1;
-}
-
-message BuyItemsRequest {
-  repeated BuyItemData items = 1;
-}
-
-message BuyItemsResponse {
-  int32 status = 1;
-  repeated string error = 2;
 }
 
 message CreateItemRequest {
