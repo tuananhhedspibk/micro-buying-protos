@@ -7,9 +7,10 @@ service OrderQueryService {
 }
 
 message ItemData {
-  string code = 1;
-  string name = 2;
-  string image = 3;
+  string id = 1;
+  string code = 2;
+  string name = 3;
+  string image = 4;
 }
 
 message OrderData {
