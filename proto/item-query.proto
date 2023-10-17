@@ -21,4 +21,5 @@ message ItemData {
   string code = 2;
   string name = 3;
   string image = 4;
+  string status = 5;
 }
